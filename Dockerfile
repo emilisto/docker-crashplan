@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER gfjardims <gfjardim@gmail.com>
+MAINTAINER gfjardim <gfjardim@gmail.com>
 
 # Add the JAVA repository, import it's key and accept it's license
 RUN echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" >> /etc/apt/sources.list
@@ -22,7 +22,6 @@ RUN bash /opt/crashplan-install.sh && \
 
 VOLUME /data
 
-EXPOSE 4243
-EXPOSE 4242
+EXPOSE 4242 4243
 
 CMD ["supervisord", "-c", "/opt/supervisor.conf", "-n"]
