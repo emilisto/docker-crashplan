@@ -17,6 +17,6 @@ cd $TARGETDIR
 
 FULL_CP="$TARGETDIR/lib/com.backup42.desktop.jar:$TARGETDIR/lang"
 
-$JAVACOMMON $SRV_JAVA_OPTS -classpath $FULL_CP com.backup42.service.CPService #> $TARGETDIR/log/engine_output.log 2> $TARGETDIR/log/engine_error.log
+$JAVACOMMON $SRV_JAVA_OPTS -classpath $FULL_CP com.backup42.service.CPService > /config/engine_output.log 2> /config/engine_error.log
 
 exit 0
