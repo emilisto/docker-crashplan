@@ -7,7 +7,7 @@ else
         echo "Did not find $TARGETDIR/install.vars file."
 fi
 
-if [[ -f $TARGETDIR/bin/run.conf ]]; then
+if [[ -e $TARGETDIR/bin/run.conf ]]; then
         . $TARGETDIR/bin/run.conf
 else
         echo "Did not find $TARGETDIR/bin/run.conf file."
