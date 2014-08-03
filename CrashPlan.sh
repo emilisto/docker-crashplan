@@ -1,4 +1,6 @@
 #!/bin/bash
+umask 000
+
 TARGETDIR=/usr/local/crashplan
 
 if [[ -f $TARGETDIR/install.vars ]]; then
